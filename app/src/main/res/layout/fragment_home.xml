@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context=".Fragments.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10sp"
+                    android:src="@drawable/menu_c"
+                    app:tint="@color/colorPrimary" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/menu"
+                    android:fontFamily="@font/m_bold"
+                    android:text="TRUE LEASE"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+
+                <ImageView
+                    android:id="@+id/noti"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/comment"
+                    android:layout_alignParentEnd="true"
+                    app:tint="@color/colorPrimary" />
+
+
+                <ImageView
+                    android:id="@+id/dot"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/red_icon"
+                    android:layout_margin="10dp"
+                   android:visibility="gone"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAFBF9"
+            android:padding="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/marker"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_marker"/>
+
+                <TextView
+                    android:id="@+id/txtCityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/marker"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/m_semibold"
+                    android:textColor="@color/colorPrimary"
+
+                   />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lin">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="3dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/ic_search"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:padding="15dp"
+                            android:src="@drawable/loupee"
+                            app:tint="@color/colorPrimary" />
+
+                        <EditText
+                            android:id="@+id/etSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/ic_search"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:fontFamily="@font/m_regular"
+                            android:hint="I am looking for"
+                            android:paddingEnd="15dp"
+                            android:textSize="12sp"
+                            tools:ignore="RtlSymmetry" />
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <com.vipulasri.ticketview.TicketView
+                android:id="@+id/ticketView"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:ticketDividerPadding="0dp"
+                app:ticketDividerType="dash"
+                app:ticketElevation="14dp"
+                app:ticketOrientation="horizontal"
+                app:ticketScallopPositionPercent="50"
+                app:ticketScallopRadius="10dp"
+                app:ticketShowBorder="false" />
+
+
+            <ImageView
+                android:id="@+id/icOffer"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:padding="12dp"
+                android:src="@drawable/discount"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                android:layout_toRightOf="@id/icOffer"
+                android:fontFamily="@font/m_regular"
+                android:text="Go rent-free for 4 months.Get flat 50% off per month.Hurry! Offer ends at midnight.T&amp;C Apply"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+
+            <TextView
+                android:id="@+id/item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/m_semibold"
+                android:text="AWESOME ITEMS"
+                android:textColor="@color/black" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/awesomeRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/m_semibold"
+                android:text="EXPLORE POPULAR CATEGORY"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+
+            <com.mlsdev.animatedrv.AnimatedRecyclerView
+                android:id="@+id/exploreProductRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHint"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                app:animationDuration="600"
+
+                app:gridLayoutManagerColumns="3"
+                app:layoutAnimation="@anim/layout_animation_from_bottom_scale"
+                app:layoutManagerOrientation="vertical"
+                app:layoutManagerReverse="false"
+                app:layoutManagerType="grid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/m_semibold"
+                android:text="NEW ITEMS"
+                android:textColor="@color/black" />
+
+
+            <com.mlsdev.animatedrv.AnimatedRecyclerView
+                android:id="@+id/ourServicesRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHint"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                app:animationDuration="600"
+                app:gridLayoutManagerColumns="3"
+                app:layoutAnimation="@anim/layout_animation_from_bottom_scale"
+                app:layoutManagerOrientation="vertical"
+                app:layoutManagerReverse="false"
+                app:layoutManagerType="grid"
+               />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

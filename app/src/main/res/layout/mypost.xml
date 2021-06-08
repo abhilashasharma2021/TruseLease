@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="5dp"
+        android:layout_margin="7dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/logo2"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="prName"
+                android:layout_below="@id/image"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/m_regular"
+                android:textSize="12sp"/>
+
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_below="@id/productName"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/m_semibold"
+                android:textColor="@color/black"
+                android:textSize="9sp"/>
+
+
+
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/productPrice"
+                android:background="#bdbdbd"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteItem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Delete item"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textAllCaps="false"
+                android:backgroundTint="#FD0101"
+                android:layout_below="@id/view"
+                android:fontFamily="@font/m_semibold"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

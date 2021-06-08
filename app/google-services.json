@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "439701315389",
+    "firebase_url": "https://true-lease.firebaseio.com",
+    "project_id": "true-lease",
+    "storage_bucket": "true-lease.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439701315389:android:d2bd01956c7060daefef54",
+        "android_client_info": {
+          "package_name": "com.truelease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439701315389-tba7tmietrfre33e7ui96j3a41oavs07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.truelease",
+            "certificate_hash": "e56ff24934d7f9bf2f806771c594f598ba102ff7"
+          }
+        },
+        {
+          "client_id": "439701315389-b5iq6e5qfh8i1bpokj7lf9un9ufogosl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvveUCyKal3ZpdBczCfhAlJEDSDInSBno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439701315389-b5iq6e5qfh8i1bpokj7lf9un9ufogosl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

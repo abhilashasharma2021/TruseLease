@@ -1,0 +1,109 @@
+<resources>
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Personal</item>
+        <item>High scores</item>
+        <item>Settings</item>
+        <item>About</item>
+    </array>
+    <string name="app_name">True Lease</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="already_registered">Already Registered?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_are_using_true_lease_as_a_guest_login_to_manage_your_subscription">You are using True lease as a guest.Login to manage your subscription</string>
+    <string name="select_state">Select State</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="contact_us">Contact us</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="if_you_have_a_query_you_can_reach_out_to_us_through_one_of_the_following_method">If you have a query,you can reach out to us through one of the following method</string>
+    <string name="talk_to_us">Talk to us</string>
+    <string name="write_to_us">Write to us</string>
+    <string name="log_in">Login</string>
+    <string name="categories">Categories</string>
+    <string name="offers">Offers</string>
+    <string name="notifications">Notifications</string>
+    <string name="my_subscriptions">My Subscriptions</string>
+    <string name="delivery_in">Delivery in</string>
+    <string name="rental_cost">Total rental cost</string>
+    <string name="what_do_you_need_help_with">What do you need help with?</string>
+    <string name="please_share_your_contact_details">Please share your contact details</string>
+    <string name="submit">Submit</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="login_using">Login Using</string>
+    <string name="your_full_name">Your Full Name</string>
+    <string name="email">Email</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="type_here">Type here.....</string>
+    <string name="refer_a_friend">Refer a friend</string>
+    <string name="value">Value</string>
+    <string name="basic">Basic</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="add_product">Add product</string>
+    <string name="tenure">Tenure</string>
+    <string name="add_images">Add Images</string>
+    <string name="parameters">Parameters</string>
+    <string name="condition">Condition</string>
+    <string name="category">Category</string>
+    <string name="search_location">Search Location</string>
+    <string name="api_key">AIzaSyD3_8H0ytV4gbNenMktwQdX8lM4gmetxsM</string>
+    <string name="bedroom">Bedroom</string>
+    <string name="i_need">I need…</string>
+    <string name="available_offers">Available Offers</string>
+    <string name="turn_on_internet_and_click_here">Turn On Internet And Click Here</string>
+    <string name="tags">Tags</string>
+    <string name="brand">Brand</string>
+    <string name="weight">Weight</string>
+    <string name="power">Power</string>
+    <string name="color">Color</string>
+    <string name="height">Height</string>
+    <string name="length">Length</string>
+    <string name="next">Next</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="deliver_in_hours">Deliver In (hours)</string>
+    <string name="phone">Phone</string>
+    <string name="total_monthly_rent">Total Monthly Rent</string>
+    <string name="value_of_a_item">Value of a item</string>
+
+    <string name="awesome_items">Awesome Items</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="tap_to_add_money_to_wallet">Tap to add money to wallet</string>
+    <string name="name">Name</string>
+    <string name="your_monthly_rental">Your Monthly Rental</string>
+    <string name="current_password">Current Password</string>
+    <string name="select_license_type">Select License Type</string>
+    <string name="downloadStarted">Download Started</string>
+    <string name="downloadCompleted">Download Completed</string>
+    <string name="downloadFailed">Download Failed</string>
+    <string name="downloadAgain">Download Again</string>
+
+
+    <string name="give">Give</string>
+    <string name="inProgress">In Progress</string>
+    <string name="onRent">On Rent</string>
+    <string name="booking_history">Booking History</string>
+    <string name="about_us">About us</string>
+
+
+    <string name="facebook_app_id">130942385630871</string>
+    <string name="fb_login_protocol_scheme">fb130942385630871</string>
+    <string name="let_your_loved_ones_know_about_true_lease_invite_your_friends_and_family_to_join_true_lease_community_and_get_a_waiver_on_your_first_transaction_service_fees">Let your loved ones know about True Lease. Invite your friends and family to join True Lease Community and get a waiver on your first transaction service fees.</string>
+    <string name="no_posts_found">No posts found!!</string>
+    <string name="ok">OK</string>
+    <string name="chat">chat</string>
+    <string name="click_ok_to_go_to_document_upload_section">*Click OK to go to document upload section</string>
+    <string name="you_can_verify_your_profile_by_going_to_the_settings_section_under_the_profile_tab_and_upload_the_required_documents">You can verify your profile by going to the settings section under the Profile Tab and upload the required documents.</string>
+    <string name="note_you_must_verify_your_profile_before_you_can_post_or_rent_an_item">Note : You must verify your profile before you can post or rent an item.</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="pay_through_stripe">Pay through Stripe</string>
+    <string name="pay_through_paypal">Pay through PAYPAL</string>
+    <string name="publishablekey">pk_test_G3EkzuF5INjnzuDWyBC0uRPz00lx8AJwED</string>
+    <string name="googlesignin">439701315389–7fignorf4r0pljtips006hcepks6ks8p.apps.googleusercontent.com</string>
+    <string name="somethingwentwrong">Something went wrong</string>
+    <string name="calculate">Calculate</string>
+    <string name="delivery_type">Delivery Type</string>
+    <string name="market_price">Market Price</string>
+    <string name="share">Share</string>
+    <string name="_000">000</string>
+    <string name="item_description">Item Description</string>
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.truelease">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".FCM.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launchertl"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_launchertl"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.StripeWebActivity"></activity>
+        <activity android:name=".Payments.StripePayActivity" />
+        <activity android:name=".Payments.PaypalActivity" />
+        <activity android:name=".Activities.SavedDetailsActivity" />
+        <activity android:name=".Activities.AboutUsActivity" />
+        <activity android:name=".Activities.HistoryActivity" />
+        <activity
+            android:name=".Activities.WithdrawalActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.SuccessfullActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.AgreementActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.MyOrdersActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".MvpEx.TestActivity" />
+        <activity android:name=".Activities.DocumentsActivity" />
+        <activity
+            android:name=".Activities.UploadDocumentActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.ChatWithAdminActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.MyRentingItemsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.ChangePasswordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.ForgotPasswordActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Activities.ShowImagesActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.ShowHelpActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Room.RoomDatabase.AddAddressActivity"
+            android:parentActivityName=".Room.RoomDatabase.AddressActivity" />
+        <activity android:name=".Room.RoomDatabase.AddressActivity" />
+        <activity android:name=".Activities.WalletActivity" />
+        <activity android:name=".Activities.MyChatsActivity" />
+        <activity android:name=".Activities.MyPostsActivity" />
+        <activity android:name=".Activities.WishListActivity" />
+        <activity
+            android:name=".Activities.EditProfileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".DraggableMap.LocationPickerActivity" />
+        <activity android:name=".Payments.PaymentOptionsActivity" />
+        <activity android:name=".Activities.AddProductStepFourthActivity" />
+        <activity
+            android:name=".Activities.DeliveryDetailsActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".Activities.TermAndConditionActivity" />
+        <activity android:name=".Activities.AddImagesActivity" />
+        <activity
+            android:name=".Activities.AddParametersActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activities.MapSearchProductsActivity" />
+        <activity
+            android:name=".Activities.AddProductStepTwoActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.AddProductStepOneActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.ReferToFriendsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.ChatActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.ProductDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.truelease.com"
+                    android:pathPrefix="/product"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MySubscriptionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.NotificationsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.ContactUsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.OffersActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.SelectCityActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.BottomNavigationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.LoginSignupActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/api_key" />
+
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_sDHz93hyNzxgXI" />
+
+        <service
+            android:name=".FCM.FirebaseMessageRecieverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.FacebookContentProvider[130942385630871]"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+package com.truelease.RetrofitModel;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class StripeResponse {
+    @SerializedName("result")
+    @Expose
+    private Boolean result;
+    @SerializedName("message")
+    @Expose
+    private String message;
+    @SerializedName("payment_link")
+    @Expose
+    private String paymentLink;
+
+    public Boolean getResult() {
+        return result;
+    }
+
+    public void setResult(Boolean result) {
+        this.result = result;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getPaymentLink() {
+        return paymentLink;
+    }
+
+    public void setPaymentLink(String paymentLink) {
+        this.paymentLink = paymentLink;
+    }
+
+}

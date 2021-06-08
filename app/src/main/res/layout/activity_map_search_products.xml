@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MapSearchProductsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/autocomplete_fragment"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </RelativeLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:padding="10sp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/back"
+                android:fontFamily="@font/m_bold"
+                android:text="TRUE LEASE"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardd"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="3dp"
+            app:contentPadding="5dp">
+
+
+            <RelativeLayout
+                android:id="@+id/relineed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/ic_search"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="13dp"
+                    android:src="@drawable/loupee"
+                    app:tint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/iNeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ic_search"
+                    android:background="@null"
+                    android:fontFamily="@font/m_regular"
+                    android:hint="@string/i_need"
+                    android:singleLine="true"
+                    android:padding="15dp"
+                    android:textSize="14sp"
+                    tools:ignore="RtlSymmetry" />
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="3dp"
+            app:contentPadding="5dp">
+
+
+            <RelativeLayout
+
+                android:id="@+id/relPlaceSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/ic_search2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_marker"
+                    app:tint="@color/colorPrimary" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@id/ic_search2"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:padding="15dp"
+                    android:fontFamily="@font/m_regular"
+                    android:hint="@string/search_location"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/m_semibold"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textSize="16sp">
+
+        <RelativeLayout
+
+            android:layout_width="150dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cyan_btn_circular"
+            android:fontFamily="@font/m_semibold"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+
+            <RelativeLayout
+                android:id="@+id/relSearch"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/white_circular"
+                android:fontFamily="@font/m_semibold"
+                android:textAllCaps="false"
+                android:textSize="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/m_semibold"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Search"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relGps"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/circle"
+        android:layout_alignParentBottom="true"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/gps"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+           android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/gps"
+
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

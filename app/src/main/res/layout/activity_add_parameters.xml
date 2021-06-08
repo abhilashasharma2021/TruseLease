@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddParametersActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/m_semibold"
+            android:text="Parameters"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/step1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/cirrcular_cyan_boundary"
+                    android:fontFamily="@font/m_semibold"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/colorPrimary" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/cirrcular_cyan_boundary"
+                    android:fontFamily="@font/m_semibold"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/colorPrimary" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/cyan_circular"
+                    android:fontFamily="@font/m_semibold"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/cirrcular_cyan_boundary"
+                    android:fontFamily="@font/m_semibold"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/m_regular"
+                    android:text="@string/brand"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/forward"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@id/brand"
+                    android:padding="8dp"
+                    android:src="@drawable/forward"
+                    app:tint="@color/colorPrimary" />
+
+
+                <Spinner
+                    android:id="@+id/spBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_toEndOf="@+id/forward"
+                    android:hint="Optional"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/m_regular"
+                    android:text="@string/power"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/forward2"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@id/power"
+                    android:padding="8dp"
+                    android:src="@drawable/forward"
+                    app:tint="@color/colorPrimary" />
+
+
+
+                    <EditText
+                        android:id="@+id/etPower"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:hint="In Watts/KWS (Optional)
+"
+                        android:layout_toEndOf="@id/forward2"
+                        android:textSize="14sp" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/m_regular"
+                    android:text="@string/weight"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/forward3"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@id/weight"
+                    android:padding="8dp"
+                    android:src="@drawable/forward"
+                    app:tint="@color/colorPrimary" />
+
+
+
+                    <EditText
+                        android:id="@+id/etWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:hint="Kilograms (Optional)"
+                        android:layout_toEndOf="@id/forward3"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/m_regular"
+                    android:text="@string/color"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/forward4"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@id/color"
+                    android:padding="8dp"
+                    android:src="@drawable/forward"
+                    app:tint="@color/colorPrimary" />
+
+
+
+                    <EditText
+                        android:id="@+id/etColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:hint="Optional"
+                        android:layout_toEndOf="@id/forward4"
+                        android:textSize="14sp" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/m_regular"
+                    android:text="@string/height"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/forward5"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@id/height"
+                    android:padding="8dp"
+                    android:src="@drawable/forward"
+                    app:tint="@color/colorPrimary" />
+
+
+
+                    <EditText
+                        android:id="@+id/etHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:hint="In Centimeters (Optional)"
+                        android:layout_toEndOf="@id/forward5"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/width"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/m_regular"
+                    android:text="Width"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/forward6"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@id/width"
+                    android:padding="8dp"
+                    android:src="@drawable/forward"
+                    app:tint="@color/colorPrimary" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/etWidth"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:hint="In Centimeters (Optional)"
+                        android:inputType="numberDecimal"
+                        android:layout_toEndOf="@id/forward6"
+                        android:textSize="14sp" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/m_regular"
+                    android:text="@string/length"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/forward7"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@id/length"
+                    android:padding="8dp"
+                    android:src="@drawable/forward"
+                    app:tint="@color/colorPrimary" />
+
+
+
+
+                    <EditText
+                        android:id="@+id/etLength"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:hint="In Centimeters (Optional)"
+                        android:inputType="numberDecimal"
+                        android:layout_toEndOf="@id/forward7"
+                        android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="@string/next" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

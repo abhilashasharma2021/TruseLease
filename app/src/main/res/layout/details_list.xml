@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/white_backg">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:paddingStart="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/m_semibold"/>
+
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:paddingStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/name"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/m_semibold"/>
+
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:paddingStart="15dp"
+            android:paddingBottom="15dp"
+            android:layout_below="@id/email"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/quantum_grey"
+            android:fontFamily="@font/m_semibold"/>
+
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/dustbin"
+            android:padding="12dp"
+            android:layout_alignParentEnd="true"
+           android:tint="@color/red"
+            tools:ignore="UseAppTint" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

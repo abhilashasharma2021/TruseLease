@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/chatOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        >
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/prf"
+            android:background="@drawable/chat_one_design"
+            android:fontFamily="@font/m_regular"
+            android:padding="15sp"
+            android:text="Hello buddy what's going on?"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/prf"
+            android:fontFamily="@font/m_regular"
+            android:text="12:00 AM"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/prf"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/avatar"
+            app:civ_border_width="1dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/chatTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/prf2"
+            android:background="@drawable/chat_two_design"
+            android:fontFamily="@font/m_regular"
+            android:padding="15sp"
+            android:text="Hello buddy"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/prf2"
+            android:fontFamily="@font/m_regular"
+            android:text="12:00 AM"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/prf2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/avatar"
+            app:civ_border_width="1dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

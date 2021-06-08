@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_margin="7dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo2"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relChat"
+                    android:layout_width="41dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="9dp"
+                    android:background="@drawable/circlr_color"
+                    android:elevation="3dp"/>
+
+                <RelativeLayout
+
+                    android:id="@+id/chat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle"
+                    android:elevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/more"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="10dp"
+                        android:src="@drawable/chat"
+                        app:tint="@color/colorPrimary" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnOne"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Receive"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/m_regular"
+                    style="?attr/materialButtonOutlinedStyle"
+                    />
+
+<!--
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/m_regular"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:text="RETURN"/>-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

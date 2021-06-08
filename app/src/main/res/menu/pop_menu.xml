@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/one"
+        android:title="New"/>
+
+    <item
+        android:id="@+id/two"
+        android:title="Used, Like New"/>
+
+    <item
+        android:id="@+id/three"
+        android:title="Used, Good"/>
+
+
+    <item
+        android:id="@+id/four"
+        android:title="Used, Acceptable"/>
+
+    <item
+        android:id="@+id/five"
+        android:title="Used, Have Defects"/>
+
+    <item
+        android:id="@+id/six"
+        android:title="Refurbished by Manufacturer"/>
+
+    <item
+        android:id="@+id/seven"
+        android:title="Refurbished"/>
+
+</menu>

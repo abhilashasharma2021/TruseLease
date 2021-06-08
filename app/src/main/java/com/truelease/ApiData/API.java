@@ -1,0 +1,64 @@
+package com.truelease.ApiData;
+
+public class API {
+
+    //public static final String BASE_URL = "https://maestrosinfotech.com/True_Lease/appservice/process.php/";
+    public static final String BASE_URL = "https://www.truelease.net/appservice/process.php/";
+    public static final String signUp = "?action=signup";
+    public static final String login = "?action=login";
+    public static final String show_category = "?action=show_category";
+    public static final String show_banner = "?action=show_banner";
+    public static final String show_city = "?action=show_city";
+    public static final String showSubCategory = "?action=show_sub_category";
+    public static final String showOffers = "?action=show_offer";
+    public static final String tc = "?action=tc";
+    public static final String showProduct = "?action=show_product";
+    public static final String add_to_favorite = "?action=add_to_favorite";
+    public static final String show_product_detail = "?action=show_product_detail";
+    public static final String needHelp = "?action=help";
+    public static final String addToCart = "?action=add_to_cart";
+    public static final String showCart = "?action=show_cart";
+    public static final String deleteFromCart = "?action=delete_from_cart";
+    public static final String showCollection = "?action=show_collection";
+    public static final String searchProduct = "?action=search_product";
+    public static final String showCurrency = "?action=show_currency";
+    public static final String updateQuantity = "?action=update_cart";
+    public static final String addProduct = "?action=add_product";
+    public static final String updateProfile = "?action=updat_profile";
+    public static final String sendMessage = "?action=chat";
+    public static final String showChat = "?action=show_chat";
+    public static final String addToFavorite = "?action=add_to_favorite";
+    public static final String showsWishList = "?action=show_in_favorite";
+    public static final String removeFromWishList = "?action=delete_to_favorite";
+    public static final String deleteItem = "?action=delete_product";
+    public static final String showBrands = "?action=show_brand";
+    public static final String showMyChats = "?action=show_my_chat";
+    public static final String showConditions = "?action=show_condition";
+    public static final String showAppChatStatus = "?action=show_app_chat_status";
+    public static final String showHelp = "?action=show_help";
+    public static final String socialLogin = "?action=social_login";
+    public static final String showAwesomeItem = "?action=show_awesome_item";
+    public static final String forgotPassword = "?action=forget_password";
+    public static final String changePassword = "?action=change_password";
+    public static final String support = "?action=support";
+    public static final String showSupportChat = "?action=show_support_chat";
+    public static final String verificationStatus = "?action=varification_status";
+    public static final String showNewItems = "?action=show_new_item";
+    public static final String showAgreement = "?action=show_general_agreement";
+    public static final String itemBooking = "?action=booking";
+    public static final String myRentedItems = "?action=my_rented_item";
+    public static final String contactUs = "?action=contact_us";
+    public static final String showAmount = "?action=show_withdraw_amount";
+    public static final String showNotification = "?action=show_notification";
+    public static final String withdrawRequest = "?action=withdraw_request";
+    public static final String bookingHistory = "?action=booking_history";
+    public static final String showWallet = "?action=wallet";
+    public static final String aboutUs = "?action=about_us";
+    public static final String deleteNotification = "?action=delete_notification";
+    public static final String newNotifications = "?action=unread_nav";
+    public static final String deleteBooking = "?action=delete_bookiong";
+    public static final String deleteChat= "?action=delete_user_chat ";
+    public static final String updateMobile= "?action=update_mobile ";
+    public static final String stripeResponse= "?action=show_webview";
+
+}
