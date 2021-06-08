@@ -108,6 +108,7 @@ public class LoginSignupActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_login_signup);
 
         relFB = findViewById(R.id.relFB);
+
         rel_promocode = findViewById(R.id.rel_promocode);
         card = findViewById(R.id.card);
         relGoogle = findViewById(R.id.relGoogle);
